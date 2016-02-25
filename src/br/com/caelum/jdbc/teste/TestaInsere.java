@@ -12,7 +12,9 @@ public class TestaInsere {
 		contato.setNome("Caelum");
 		contato.setEmail("contato@caelum.com.br");
 		contato.setEndereco("R. Vergueiro, 3185 cj57");
-		contato.setDataNascimento(Calendar.getInstance());
+		Calendar data = Calendar.getInstance();
+		data.set(2016, Calendar.FEBRUARY, 25);
+		contato.setDataNascimento(data);
 
 		ContatoDao dao = new ContatoDao();
 
